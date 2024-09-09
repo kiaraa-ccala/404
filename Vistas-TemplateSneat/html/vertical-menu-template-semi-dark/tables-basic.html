@@ -106,19 +106,74 @@
       </div>
       <ul class="navbar-nav ms-lg-auto">
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0);"><i class="tf-icons navbar-icon bx bx-user"></i> Usuario </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0);"><i class="tf-icons navbar-icon bx bx-cog"></i> Notificaciones</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0);"><i class="tf-icons navbar-icon bx bx-lock-open-alt"></i> Salir</a>
+          <!-- User -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0);"><i class="bx bx-bell bx-sm"></i> Notificaciones  </a>
+          </li>
+
+
+          <li class="nav-item navbar-dropdown dropdown-user dropdown">
+            <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+              <div class="avatar avatar-online">
+                <img src="../../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle">
+              </div>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="pages-account-settings-account.html">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                      <div class="avatar avatar-online">
+                        <img src="../../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle">
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <span class="fw-medium d-block">GonzaXFoxi</span>
+                      <small class="text-muted">Coordinador</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li>
+                <a class="dropdown-item" href="pages-profile-user.html">
+                  <i class="bx bx-user me-2"></i>
+                  <span class="align-middle">Mi perfil</span>
+                </a>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li>
+                <a class="dropdown-item" href="pages-faq.html">
+                  <i class="bx bx-help-circle me-2"></i>
+                  <span class="align-middle">Preguntas Frecuentes</span>
+                </a>
+              </li>
+              <li>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li>
+                <a class="dropdown-item" href="auth-login-cover.html" target="_blank">
+                  <i class="bx bx-power-off me-2"></i>
+                  <span class="align-middle">Salir</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!--/ User -->
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
+              
   
 <!-- / Navbar -->
 
@@ -168,13 +223,15 @@
           </td>
           <td><span class="badge bg-label-primary me-1">Active</span></td>
           <td>
+            <td>
             <div class="dropdown">
               <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
               </div>
             </div>
+          </td>
           </td>
         </tr>
         <tr>
@@ -193,16 +250,18 @@
               </li>
             </ul>
           </td>
-          <td><span class="badge bg-label-success me-1">Completed</span></td>
+          <td></td>
           <td>
-            <div class="dropdown">
-              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
-              </div>
-            </div>
           </td>
+            <td>
+                <div class="dropdown">
+                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+                  </div>
+                </div>
+            </td>
         </tr>
         <tr>
           <td><i class="fab fa-vuejs fa-lg text-success me-3"></i> <span class="fw-medium">VueJs Project</span></td>
@@ -222,13 +281,15 @@
           </td>
           <td><span class="badge bg-label-info me-1">Scheduled</span></td>
           <td>
-            <div class="dropdown">
-              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+            <td>
+              <div class="dropdown">
+                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+                </div>
               </div>
-            </div>
+            </td>
           </td>
         </tr>
         <tr>
@@ -248,16 +309,18 @@
             </ul>
           </td>
           <td><span class="badge bg-label-warning me-1">Pending</span></td>
+
           <td>
-            <div class="dropdown">
-              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+            <td>
+              <div class="dropdown">
+                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+                </div>
               </div>
-            </div>
+            </td>
           </td>
-        </tr>
       </tbody>
     </table>
   </div>
@@ -274,7 +337,7 @@
 <footer class="footer bg-footer-theme">
   <div class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3">
     <div>
-      <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/" target="_blank" class="footer-text fw-bold">Alianza Animal</a> ©
+      <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/" target="_blank" class="footer-text fw-bold">©2024 Alianza Animal S.A. Todos los derechos reservados.</a>
     </div>
     <div>
       <a href="javascript:void(0)" class="footer-link me-4">Ayuda</a>
@@ -299,7 +362,7 @@
     
     
     <!-- Drag Target Area To SlideIn Menu On Small Screens -->
-    <div class="drag-target"></div>
+  
     
   </div>
   <!-- / Layout wrapper -->
