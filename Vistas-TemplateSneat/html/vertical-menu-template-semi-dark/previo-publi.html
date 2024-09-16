@@ -379,231 +379,126 @@
             
             
 <h4 class="py-3 mb-4">
-  <span class="text-muted fw-light">Solicitudes /</span> Registro
+  <span class="text-muted fw-light">Nueva Publicación /</span> Mascotas Perdidas
 </h4>
 
 <!-- Basic Bootstrap Table -->
-<div class="card">
-  <div class="card-body">
-    <div class="row">
-      <div class="col-md-6 d-flex align-items-center">
-        <h5 class="card-title mb-0">Registro de Solicitudes</h5>
-      </div>
-      
-      <!-- Columna para el campo de búsqueda alineado a la derecha -->
-      <div class="col-md-6 d-flex justify-content-end align-items-center">
-        <div class="search-container">
-          <label for="search" class="me-2">Buscar:</label>
-          <input type="search" id="search" class="form-control" placeholder="Buscar...">
+<div class="col-xl-6">
+    <!-- HTML5 Inputs -->
+    <div class="card mb-4">
+      <h6 class="card-header">Rellena este formulario para generar una publicación sobre mascota perdida</h6>
+      <div class="card-body">
+        <div class="mb-3 row">
+          <label for="html5-text-input" class="col-md-2 col-form-label">Titulo</label>
+          <div class="col-md-10">
+            <input class="form-control" type="text" value="Titulo" id="html5-text-input" />
+          </div>
         </div>
-      </div>
-
-  <div class="table-responsive text-nowrap">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Solicitud</th>
-          <th>Usuario</th>
-          <th>Rol</th>
-          <th>Estado</th>
-          <th>Fecha</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody class="table-border-bottom-0">
-        <tr>
-          <td><i class='bx bxs-donate-heart'></i> <span class="fw-medium">Albergue Huellitas</span></td>
-          <td>Adrian Marcelo</td>
-          <td>
-            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Administrador">
-                <img src="../../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Albergue">
-                <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Coordinador">
-                <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle">
-              </li>
-            </ul>
-          </td>
-          <td><span class="badge bg-label-primary me-1">Aceptado</span></td>
-          <td> 10/09/2024 </td>
-          <td>
-            
-            <div class="card-body p-0">
-              <div class="d-inline-flex">
-                <button type="button" class="btn btn-sm btn-danger me-1">Eliminar</button>
-                <button type="button" class="btn btn-sm btn-warning">Editar</button>
-              </div>
+        <div class="mb-3 row">
+            <label for="html5-text-input" class="col-md-2 col-form-label">Titulo</label>
+            <div class="col-md-10">
+              <input class="form-control" type="text" value="Titulo" id="html5-text-input" />
             </div>
-            
+        </div>
+
+        <div class="mb-3 row">
+            <label for="defaultSelect" class="col-md-2 col-form-label">Tipo</label>
+            <div class="col-md-10">
+              <select id="defaultSelect" class="form-select">
+                <option selected>Elija el tipo de la publicación</option>
+                <option value="1">Mascotas Perdidas</option>
+                <option value="2">Donaciones</option>
+                <option value="3">Hogares Temporales</option>
+              </select>
+            </div>
+        </div>
           
-          </td>
-        </tr>
-        <tr>
-          <td><i class="bx bx-home-heart mb-2"></i> <span class="fw-medium">Hogar Temporal</span></td>
-          <td>Hogar Esmeralda</td>
-          <td>
-            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Administrador">
-                <img src="../../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Albergue">
-                <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Coordinador">
-                <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle">
-              </li>
-            </ul>
-          </td>
-        <td><span class="badge bg-label-primary me-1">Aceptado</span></td>
-          <td> 10/08/2024 </td>
-            <td>
-              <div class="card-body p-0">
-                <div class="d-inline-flex">
-                  <button type="button" class="btn btn-sm btn-danger me-1">Eliminar</button>
-                  <button type="button" class="btn btn-sm btn-warning">Editar</button>
-                </div>
-              </div>
-              
-              </div>
-            </td>
-        </tr>
 
-        <tr>
-          
-        </tr>
-          <td><i class="bx bxl-baidu mb-2"></i> <span class="fw-medium">Mascotas Perdidas</span></td>
-          <td>Ariana Grande</td>
-          <td>
-            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Administrador">
-                <img src="../../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Albergue">
-                <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Coordinador">
-                <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle">
-              </li>
-            </ul>
-          </td>
-          <td><span class="badge bg-label-info me-1">Cargando</span></td>
-          <td>
-            15/09/2024
-            <td>
-              <div class="card-body p-0">
-                <div class="d-inline-flex">
-                  <button type="button" class="btn btn-sm btn-danger me-1">Eliminar</button>
-                  <button type="button" class="btn btn-sm btn-warning">Editar</button>
-                </div>
-              </div>
-              
-            </td>
-          </td>
-        </tr>
-        <tr>
-          <td><i class="bx bxl-baidu mb-2"></i> <span class="fw-medium">Mascotas Perdidas</span></td>
-          <td>Ariana Grande</td>
-          <td>
-            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Administrador">
-                <img src="../../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Albergue">
-                <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Coordinador">
-                <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle">
-              </li>
-            </ul>
-          </td>
-          <td><span class="badge bg-label-info me-1">Cargando</span></td>
-          <td>
-            15/09/2024
-            <td>
-              <div class="card-body p-0">
-                <div class="d-inline-flex">
-                  <button type="button" class="btn btn-sm btn-danger me-1">Eliminar</button>
-                  <button type="button" class="btn btn-sm btn-warning">Editar</button>
-                </div>
-              </div>
-              
-            </td>
-          </td>
-        </tr>
-        <tr>
-          <td><i class="bx bxs-donate-heart"></i> <span class="fw-medium">Albergue Animalitos</span></td>
-          <td>Godzila Nicola</td>
-          <td>
-            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Coordinador">
-                <img src="../../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Albergue">
-                <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
-              </li>
-              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Usuario">
-                <img src="../../assets/img/avatars/7.png" alt="Avatar" class="rounded-circle">
-              </li>
-            </ul>
-          </td>
-          <td><span class="badge bg-label-warning me-1">Pendiente</span></td>
 
-          <td>
-            20/09/2024
-            <td>
-              <div class="card-body p-0">
-                <div class="d-inline-flex">
-                  <button type="button" class="btn btn-sm btn-danger me-1">Eliminar</button>
-                  <button type="button" class="btn btn-sm btn-warning">Editar</button>
-                </div>
-              </div>
-              
-            </td>
-          </td>
-      </tbody>
-    </table>
+        <div class="mb-3 row">
+          <label for="html5-email-input" class="col-md-2 col-form-label">Email</label>
+          <div class="col-md-10">
+            <input class="form-control" type="email" value="john@example.com" id="html5-email-input" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="html5-url-input" class="col-md-2 col-form-label">URL</label>
+          <div class="col-md-10">
+            <input class="form-control" type="url" value="https://themeselection.com" id="html5-url-input" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="html5-tel-input" class="col-md-2 col-form-label">Phone</label>
+          <div class="col-md-10">
+            <input class="form-control" type="tel" value="90-(164)-188-556" id="html5-tel-input" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="html5-password-input" class="col-md-2 col-form-label">Password</label>
+          <div class="col-md-10">
+            <input class="form-control" type="password" value="password" id="html5-password-input" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="html5-number-input" class="col-md-2 col-form-label">Number</label>
+          <div class="col-md-10">
+            <input class="form-control" type="number" value="18" id="html5-number-input" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="html5-datetime-local-input" class="col-md-2 col-form-label">Datetime</label>
+          <div class="col-md-10">
+            <input class="form-control" type="datetime-local" value="2021-06-18T12:30:00" id="html5-datetime-local-input" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="html5-date-input" class="col-md-2 col-form-label">Date</label>
+          <div class="col-md-10">
+            <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="html5-month-input" class="col-md-2 col-form-label">Month</label>
+          <div class="col-md-10">
+            <input class="form-control" type="month" value="2021-06" id="html5-month-input" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="html5-week-input" class="col-md-2 col-form-label">Week</label>
+          <div class="col-md-10">
+            <input class="form-control" type="week" value="2021-W25" id="html5-week-input" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="html5-time-input" class="col-md-2 col-form-label">Time</label>
+          <div class="col-md-10">
+            <input class="form-control" type="time" value="12:30:00" id="html5-time-input" />
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
-    <ul class="pagination">
-      <li class="paginate_button page-item previous disabled">
-        <a href="#" class="page-link">&laquo;</a>
-      </li>
-      <li class="paginate_button page-item">
-        <a href="#" class="page-link">1</a>
-      </li>
-      <li class="paginate_button page-item">
-        <a href="#" class="page-link">2</a>
-      </li>
-      <li class="paginate_button page-item">
-        <a href="#" class="page-link">3</a>
-      </li>
-      <li class="paginate_button page-item">
-        <a href="#" class="page-link">4</a>
-      </li>
-      <li class="paginate_button page-item">
-        <a href="#" class="page-link">5</a>
-      </li>
-      <li class="paginate_button page-item disabled">
-        <a href="#" class="page-link">...</a>
-      </li>
-      <li class="paginate_button page-item">
-        <a href="#" class="page-link">15</a>
-      </li>
-      <li class="paginate_button page-item next">
-        <a href="#" class="page-link">&raquo;</a>
-      </li>
-    </ul>
-    
-
-    
+    <!-- File input -->
+    <div class="card">
+      <h5 class="card-header">File input</h5>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Default file input example</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+          <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+          <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
+       
+      </div>
+    </div>
   </div>
-</div>
 
 <!--/ Basic Bootstrap Table -->
 
-          </div>
+    </div>
           <!-- / Content -->
 
           
