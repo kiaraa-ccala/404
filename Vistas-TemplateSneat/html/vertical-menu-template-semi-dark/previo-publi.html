@@ -379,27 +379,42 @@
             
             
 <h4 class="py-3 mb-4">
-  <span class="text-muted fw-light">Publicaciones /</span> Nueva Publicacion
+  <span class="text-muted fw-light">Nueva Publicación /</span> Mascotas Perdidas
 </h4>
 
 <!-- Basic Bootstrap Table -->
 <div class="col-xl-6">
     <!-- HTML5 Inputs -->
     <div class="card mb-4">
-      <h5 class="card-header">HTML5 Inputs</h5>
+      <h6 class="card-header">Rellena este formulario para generar una publicación sobre mascota perdida</h6>
       <div class="card-body">
         <div class="mb-3 row">
-          <label for="html5-text-input" class="col-md-2 col-form-label">Text</label>
+          <label for="html5-text-input" class="col-md-2 col-form-label">Titulo</label>
           <div class="col-md-10">
-            <input class="form-control" type="text" value="Sneat" id="html5-text-input" />
+            <input class="form-control" type="text" value="Titulo" id="html5-text-input" />
           </div>
         </div>
         <div class="mb-3 row">
-          <label for="html5-search-input" class="col-md-2 col-form-label">Search</label>
-          <div class="col-md-10">
-            <input class="form-control" type="search" value="Search ..." id="html5-search-input" />
-          </div>
+            <label for="html5-text-input" class="col-md-2 col-form-label">Titulo</label>
+            <div class="col-md-10">
+              <input class="form-control" type="text" value="Titulo" id="html5-text-input" />
+            </div>
         </div>
+
+        <div class="mb-3 row">
+            <label for="defaultSelect" class="col-md-2 col-form-label">Tipo</label>
+            <div class="col-md-10">
+              <select id="defaultSelect" class="form-select">
+                <option selected>Elija el tipo de la publicación</option>
+                <option value="1">Mascotas Perdidas</option>
+                <option value="2">Donaciones</option>
+                <option value="3">Hogares Temporales</option>
+              </select>
+            </div>
+        </div>
+          
+
+
         <div class="mb-3 row">
           <label for="html5-email-input" class="col-md-2 col-form-label">Email</label>
           <div class="col-md-10">
