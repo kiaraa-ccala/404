@@ -136,14 +136,26 @@
               <a class="nav-item nav-link" href="javascript:void(0)">Publicaciones</a>
               <a class="nav-item nav-link" href="javascript:void(0)">Eventos</a>
               <a class="nav-item nav-link" href="javascript:void(0)">Servicios</a>
+
             </div>
+            
+            
+        
       
             <ul class="navbar-nav flex-row align-items-center ms-auto">
                 
       
       
       
-                
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Solicitudes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Hogares Temporales</a></li>
+                  <li><a class="dropdown-item" href="#">Publicaciones</a></li>
+                </ul>
+              </li>
       
                 <!-- Notification -->
                 <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
@@ -348,7 +360,7 @@
                           </div>
                           <div class="flex-grow-1">
                             <span class="fw-medium d-block"> Usuario </span>
-                            <small class="text-muted">Admin</small>
+                            <small class="text-muted">Coordinador</small>
                           </div>
                         </div>
                       </a>
@@ -365,6 +377,14 @@
           
                     
                     <li>
+                      <a class="dropdown-item" href="pages-profile-user.html">
+                        <i class="bx bx-edit me-2"></i>
+                        <span class="align-middle">Solicitudes</span>
+                      </a>
+                    </li>
+          
+                    
+                    <li>
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
@@ -373,12 +393,7 @@
                         <span class="align-middle">Preguntas frecuentes</span>
                       </a>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="pages-pricing.html">
-                        <i class="bx bx-dollar me-2"></i>
-                        <span class="align-middle">Donaciones</span>
-                      </a>
-                    </li>
+                   
                     <li>
                       <div class="dropdown-divider"></div>
                     </li>
@@ -413,73 +428,13 @@
             
             
 <h4 class="py-3 mb-4">
-  <span class="text-muted fw-light">Usuario /</span> Cuenta
+  <span class="text-muted fw-light">Solicitudes / Publicaciones /</span> Mascota Perdida
 </h4>
 <div class="row">
   <!-- User Sidebar -->
   <div class="col-xl-4 col-lg-5 col-md-5 order-1 order-md-0">
     <!-- User Card -->
-    <div class="card mb-4">
-      <div class="card-body">
-        <div class="user-avatar-section">
-          <div class=" d-flex align-items-center flex-column">
-            <img class="img-fluid rounded my-4" src="../../assets/img/avatars/10.png" height="110" width="110" alt="User avatar" />
-            <div class="user-info text-center">
-              <h4 class="mb-2">Hogar Mendoza</h4>
-              <span class="badge bg-label-secondary">Hogar temporal</span>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex justify-content-around flex-wrap my-4 py-3">
-          <div class="d-flex align-items-start me-4 mt-3 gap-3">
-            <span class="badge bg-label-primary p-2 rounded"><i class='bx bx-check bx-sm'></i></span>
-            <div>
-              <h5 class="mb-0">1.23k</h5>
-              <span>Publicaciones</span>
-            </div>
-          </div>
-          <div class="d-flex align-items-start mt-3 gap-3">
-            <span class="badge bg-label-primary p-2 rounded"><i class='bx bx-customize bx-sm'></i></span>
-            <div>
-              <h5 class="mb-0">568</h5>
-              <span>Eventos/Hogares</span>
-            </div>
-          </div>
-        </div>
-        <h5 class="pb-2 border-bottom mb-4">Detalles</h5>
-        <div class="info-container">
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              <span class="fw-medium me-2">Nombre de Usuario:</span>
-              <span>violet.alberg</span>
-            </li>
-            <li class="mb-3">
-              <span class="fw-medium me-2">Correo:</span>
-              <span>vafgot@vultukir.org</span>
-            </li>
-            <li class="mb-3">
-              <span class="fw-medium me-2">Estado:</span>
-              <span class="badge bg-label-success">Activo</span>
-            </li>
-            <li class="mb-3">
-              <span class="fw-medium me-2">Rol:</span>
-              <span>Usuario final</span>
-            </li>
-           
-            <li class="mb-3">
-              <span class="fw-medium me-2">Contacto:</span>
-              <span>(123) 456-7890</span>
-            </li>
-           
-          </ul>
-     
-          <div class="d-flex justify-content-center pt-3">
-            <a href="javascript:;" class="btn btn-label-danger suspend-user">Suspender</a>
-        </div>
-        
-        </div>
-      </div>
-    </div>
+ 
     <!-- /User Card -->
     <!-- Plan Card -->
   
@@ -489,126 +444,74 @@
 
 
   <!-- User Content -->
-  <div class="col-xl-8 col-lg-7 col-md-7 order-0 order-md-1">
     <!-- User Pills -->
     <!-- User Pills -->
-    <ul class="nav nav-pills flex-column flex-md-row mb-3">
-      <li class="nav-item"><a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i>Cuenta</a></li>
-      <li class="nav-item"><a class="nav-link" href="app-user-view-security.html"><i class="bx bx-lock-alt me-1"></i>Seguridad</a></li>
-    </ul>
+    
     <!--/ User Pills -->
     <!--/ User Pills -->
 
     <!-- Project table -->
-    <div class="card mb-4">
-      <h5 class="card-header">Hogares Temporales: Refugio de Mendoza</h5>
-      <div class="p-3 descripcion-hogar">
-        <strong>Refugio Mendoza:</strong> Un Hogar Temporal de Amor y Cuidado.<br><br>
-        Refugio Laurdia es un hogar temporal dedicado a ofrecer un entorno seguro y afectuoso para animales en necesidad. Proporcionamos atención personalizada, apoyo veterinario, y un espacio donde cada animal puede recuperarse y prepararse para encontrar un hogar definitivo. Nuestra misión es darles una segunda oportunidad, brindando amor y cuidados durante su estancia con nosotros.
-        <br><br>
-        Si deseas ofrecer un hogar temporal, permanente, o unirte como voluntario, contáctanos y juntos haremos la diferencia.
+    <h4>Publicaciones: Mascotas Perdidas</h4>
+    <div class="container mt-4 d-flex flex-column align-items-center">
+      <div class="row justify-content-center align-items-center">
+          <!-- Columna para la imagen -->
+          <div class="col-md-5 mb-3 text-center">
+              <img src="https://www.animalesbog.gov.co/sites/default/files/styles/noticias_galeria/public/noticias/imagenes/WhatsApp%20Image%202020-05-28%20at%2013.31.15.jpeg?itok=KpS-rVrq" alt="Perro feliz" class="img-fluid">
+          </div>
+          <!-- Columna para el texto -->
+          <div class="col-md-5">
+              <div class="card">
+                  <div class="card-body">
+                      <h4 class="card-title">Solicitud mascota perdida:</h4>
+                      <div class="description">
+                          <h5 class="mb-3">¡Ayúdanos a encontrarla!</h5>
+                          <p>Esta pequeña se perdió y su familia la está buscando desesperadamente. Fue vista por última vez en <strong>[inserta ubicación]</strong> el <strong>[inserta fecha]</strong>. Si tienes alguna información o la has visto, por favor contáctanos de inmediato. ¡Tu ayuda es crucial para reunirla con su hogar! Contacta a: <strong>[contacto]</strong></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-    
-    
-    <!-- /Project table -->
-
-    <!-- Activity Timeline -->
-    <div class="card mb-4">
-      <h5 class="card-header">Actividad del Hogar Temporal Mendoza</h5>
-      <div class="card-body">
-        <ul class="timeline">
-          <li class="timeline-item timeline-item-transparent">
-            <span class="timeline-point-wrapper"><span class="timeline-point timeline-point-primary"></span></span>
-            <div class="timeline-event">
-              <div class="timeline-header mb-1">
-                <h6 class="mb-0">5 animales han sido adoptados</h6>
-                <small class="text-muted">Hace 12 min</small>
-              </div>
-              <p class="mb-2">5 mascotas encontraron su hogar definitivo gracias al Hogar Mendoza.</p>
-            </div>
-          </li>
-          <li class="timeline-item timeline-item-transparent">
-            <span class="timeline-point-wrapper"><span class="timeline-point timeline-point-warning"></span></span>
-            <div class="timeline-event">
-              <div class="timeline-header mb-1">
-                <h6 class="mb-0">Evento caritativo</h6>
-                <small class="text-muted">Hace 45 min</small>
-              </div>
-              <p class="mb-2">Se realizó un evento para recaudar fondos destinados al bienestar de los animales.</p>
-            </div>
-          </li>
-          <li class="timeline-item timeline-item-transparent">
-            <span class="timeline-point-wrapper"><span class="timeline-point timeline-point-info"></span></span>
-            <div class="timeline-event">
-              <div class="timeline-header mb-1">
-                <h6 class="mb-0">Ingreso de 3 nuevos animales</h6>
-                <small class="text-muted">Hace 2 días</small>
-              </div>
-              <p class="mb-2">Tres perros rescatados ingresaron al hogar temporal para recibir cuidados y encontrar un hogar permanente.</p>
-            </div>
-          </li>
-          <li class="timeline-item timeline-item-transparent">
-            <span class="timeline-point-wrapper"><span class="timeline-point timeline-point-success"></span></span>
-            <div class="timeline-event">
-              <div class="timeline-header mb-1">
-                <h6 class="mb-0">Revisión de salud</h6>
-                <small class="text-muted">Hace 5 días</small>
-              </div>
-              <p class="mb-0">Se completó la revisión veterinaria semanal para garantizar el bienestar de los animales en el hogar.</p>
-            </div>
-          </li>
-          <li class="timeline-end-indicator">
-            <i class="bx bx-check-circle"></i>
-          </li>
-        </ul>
-      </div>
-    </div>
-    
-    <!-- /Activity Timeline -->
-
+      
   </div>
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-10">
+        <h5>Comentarios:</h5>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Comentario</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>El pasado viernes se visualizó....</td>
+                    <td>2/11/2023</td>
+                </tr>
+                <tr>
+                    <td><strong>Última actualización.</strong> Se pudo visualizar...</td>
+                    <td>12/12/2023</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" class="form-control" placeholder="Escribe un comentario...">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+  
+  
+  
+  
   <!--/ User Content -->
 </div>
 
 <!-- Modal -->
 
 <!-- Add New Credit Card Modal -->
-<div class="modal fade" id="upgradePlanModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-simple modal-upgrade-plan">
-    <div class="modal-content p-3 p-md-5">
-      <div class="modal-body">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="text-center mb-4">
-          <h3>Upgrade Plan</h3>
-          <p>Choose the best plan for user.</p>
-        </div>
-        <form id="upgradePlanForm" class="row g-3" onsubmit="return false">
-          <div class="col-sm-9">
-            <label class="form-label" for="choosePlan">Choose Plan</label>
-            <select id="choosePlan" name="choosePlan" class="form-select" aria-label="Choose Plan">
-              <option selected>Choose Plan</option>
-              <option value="standard">Standard - $99/month</option>
-              <option value="exclusive">Exclusive - $249/month</option>
-              <option value="Enterprise">Enterprise - $499/month</option>
-            </select>
-          </div>
-          <div class="col-sm-3 d-flex align-items-end">
-            <button type="submit" class="btn btn-primary">Upgrade</button>
-          </div>
-        </form>
-      </div>
-      <hr class="mx-md-n5 mx-n3">
-      <div class="modal-body">
-        <h6 class="mb-0">User current plan is standard plan</h6>
-        <div class="d-flex justify-content-between align-items-center flex-wrap">
-          
-          <button class="btn btn-label-danger cancel-subscription mt-3">Cancel Subscription</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 <!--/ Add New Credit Card Modal -->
 
 <!-- /Modal -->

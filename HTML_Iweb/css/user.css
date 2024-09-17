@@ -1,0 +1,79 @@
+/* Detached navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
+    padding-top: 74px !important;
+  }
+  /* Default navbar */
+  .layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+    padding-top: 64px !important;
+  }
+  .docs-page .layout-navbar-fixed.layout-wrapper:not(.layout-without-menu) .layout-page,
+  .docs-page .layout-menu-fixed.layout-wrapper:not(.layout-without-menu) .layout-page {
+    padding-top: 62px !important;
+  }
+  
+  /* Navbar page z-index issue solution */
+  .content-wrapper .navbar {
+    z-index: auto;
+  }
+
+.layout-wrapper,
+.layout-container,
+.layout-page {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+body {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.layout-wrapper,
+.layout-container,
+.layout-page {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Limita la altura de la lista de notificaciones y activa el scroll */
+.scrollable-container {
+    max-height: 300px; /* Ajusta la altura máxima que deseas */
+    overflow-y: auto;  /* Activa el scroll vertical */
+  }
+
+
+  .navbar {
+    position: fixed !important; /* Asegura que el navbar quede fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999 !important; /* Garantiza que el navbar esté siempre por encima de otros elementos */
+    background-color: #ffffff !important; /* Fondo sólido */
+    box-shadow: none !important; /* Elimina cualquier sombra no deseada */
+  }
+  
+/* Cambiar el estilo del botón de confirmación */
+.swal2-confirm {
+    background-color: #006cff !important; /* Color de fondo */
+    color: white !important;              /* Color del texto */
+    border-radius: 4px !important;        /* Bordes redondeados */
+    padding: 10px 20px !important;        /* Padding personalizado */
+  }
+  
+  /* Cambiar el estilo del botón de cancelar */
+  .swal2-cancel {
+    background-color: #cccccc !important; /* Color de fondo */
+    color: black !important;              /* Color del texto */
+    border-radius: 4px !important;        /* Bordes redondeados */
+    padding: 10px 20px !important;        /* Padding personalizado */
+  }
+  

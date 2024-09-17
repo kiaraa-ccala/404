@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html lang="es" class="light-style layout-navbar-fixed layout-menu-fixed layout-compact " dir="ltr" data-theme="theme-semi-dark" data-assets-path="../../assets/" data-template="vertical-menu-template-semi-dark">
+
+
+
+
+
+
+
+<!-- =========================================================
+* Sneat - Bootstrap Dashboard PRO | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/item/sneat-dashboard-pro-bootstrap/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+
+
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed layout-compact " dir="ltr" data-theme="theme-semi-dark" data-assets-path="../../assets/" data-template="vertical-menu-template-semi-dark">
 
   
-<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template-semi-dark/app-ecommerce-product-add.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Apr 2024 23:14:07 GMT -->
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template-semi-dark/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Apr 2024 23:16:06 GMT -->
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Crear Nueva publicación</title>
+    <title>Demo : Tables - Basic Tables | Sneat - Bootstrap Dashboard PRO</title>
 
     
     <meta name="description" content="Most Powerful &amp; Comprehensive Bootstrap 5 Admin Dashboard built for developers!" />
@@ -40,18 +61,12 @@
     <!-- Core CSS -->
     <link rel="stylesheet" href="../../assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="../../assets/vendor/css/rtl/theme-semi-dark.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="../../assets/css/demo.css" />
+    <link rel="stylesheet" href="../../css/demo.css" />
     
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css" /> 
-    <link rel="stylesheet" href="../../assets/vendor/libs/quill/typography.css">
-    <link rel="stylesheet" href="../../assets/vendor/libs/quill/katex.css">
-    <link rel="stylesheet" href="../../assets/vendor/libs/quill/editor.css">
-    <link rel="stylesheet" href="../../assets/vendor/libs/select2/select2.css">
-    <link rel="stylesheet" href="../../assets/vendor/libs/dropzone/dropzone.css">
-    <link rel="stylesheet" href="../../assets/vendor/libs/flatpickr/flatpickr.css">
-    <link rel="stylesheet" href="../../assets/vendor/libs/tagify/tagify.css" />
+    
 
     <!-- Page CSS -->
     
@@ -60,6 +75,7 @@
     <script src="../../assets/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="../../assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../../assets/js/config.js"></script>
     
@@ -71,8 +87,9 @@
   <!-- ?PROD Only: Google Tag Manager (noscript) (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DDHKGP" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  
+ 
 <!-- Navbar -->
+
 <nav class="navbar navbar-expand-lg bg-navbar-theme">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-5">
@@ -87,6 +104,12 @@
       </div>
 
       <ul class="navbar-nav flex-row align-items-center ms-auto">
+          
+
+
+
+          
+
           <!-- Notification -->
           <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
             <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
@@ -290,7 +313,7 @@
                     </div>
                     <div class="flex-grow-1">
                       <span class="fw-medium d-block"> Usuario </span>
-                      <small class="text-muted">Admin</small>
+                      <small class="text-muted">Albergue</small>
                     </div>
                   </div>
                 </a>
@@ -304,21 +327,40 @@
                   <span class="align-middle">Mi perfil</span>
                 </a>
               </li>
+              <li>
+                <a class="dropdown-item" href="pages-profile-user.html">
+                  <i class="bx bx-calendar me-2"></i>
+                  <span class="align-middle">Mis Eventos</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="pages-profile-user.html">
+                  <i class="bx bx-edit me-2"></i>
+                  <span class="align-middle">Mis Publicaciones</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="pages-profile-user.html">
+                  <i class="bx bx-home-heart me-2"></i>
+                  <span class="align-middle">Hogares Temporales</span>
+                </a>
+              </li>
     
               
               <li>
-                <div class="dropdown-divider"></div>
+              <div class="dropdown-divider"></div>
+              </li>
+ 
+              <li>
+                <a class="dropdown-item" href="pages-pricing.html">
+                  <i class="bx bx-dollar me-2"></i>
+                  <span class="align-middle">Donaciones</span>
+                </a>
               </li>
               <li>
                 <a class="dropdown-item" href="pages-faq.html">
                   <i class="bx bx-help-circle me-2"></i>
                   <span class="align-middle">Preguntas frecuentes</span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="pages-pricing.html">
-                  <i class="bx bx-dollar me-2"></i>
-                  <span class="align-middle">Donaciones</span>
                 </a>
               </li>
               <li>
@@ -333,13 +375,19 @@
             </ul>
           </li>
           <!--/ User -->
+          
+
         </ul>
     </div>
   </div>
-</nav>  
-<!-- / Navbar -->
+</nav>
 
-      
+
+
+
+              
+  
+<!-- / Navbar -->
 
       <!-- Content wrapper -->
       <div class="content-wrapper">
@@ -349,101 +397,243 @@
           <div class="container-xxl flex-grow-1 container-p-y">
             
             
-
 <h4 class="py-3 mb-4">
-  <span class="text-muted fw-light">Publicaciones /</span><span> Crear publicacion</span>
+  <span class="text-muted fw-light"></span> Mis Eventos
 </h4>
 
-<div class="app-ecommerce">
-
-  <!-- Add Product -->
-  <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
-
-    <div class="d-flex flex-column justify-content-center">
-      <h4 class="mb-1 mt-3">Crear nueva publicación</h4>
-      <p class="text-muted">Rellena los campos abajo</p>
-    </div>
-    <div class="d-flex align-content-center flex-wrap gap-3">
-      <button class="btn btn-label-secondary">Descartar</button>
-      <button type="submit" class="btn btn-primary">Publicar</button>
-    </div>
-
-  </div>
-  <div class="column-container">
-    <div class="column"></div>
-
-        <!-- First column-->
-        <div class="col-12 col-lg-8">
-        <!-- Product Information -->
-        <div class="card mb-4">
-            <div class="card-header">
-            <h5 class="card-tile mb-0">Publicación</h5>
-            </div>
-            <div class="card-body">
-            <div class="mb-3">
-                <label class="form-label" for="ecommerce-product-name">Titulo</label>
-                <input type="text" class="form-control" id="post-title" placeholder="Título de la publicación" name="productTitle" aria-label="Product title">
-            </div>
-            <div class="row mb-3">
-                <div class="col"><label class="form-label" for="ecommerce-product-sku">Tipo</label>
-                    <select class="form-control" id="opciones" onchange="cambiarPagina()" required>
-                        <option value="" disabled selected>Elija el tipo de publicación</option>
-                        <option value="crear-publicacion-usuariofinal-normal.html" selected>Normal</option>
-                        <option value="crear-publicacion-usuariofinal-mascotaperdida.html">Mascota Perdida</option>
-                        <option value="crear-publicacion-usuariofinal-denunciamaltrato.html">Denuncia por Maltrato Animal</option>
-                    </select>
-                <div class="col"><label class="form-label" for="ecommerce-product-barcode">Etiquetas</label>
-                <input type="text" class="form-control" id="post-tags" placeholder="Ingrese las Etiquetas aquí" name="productBarcode" aria-label="Product barcode"></div>
-            </div>
-            <!-- Description -->
-            <div>
-                <label class="form-label">Descripcion <span class="text-muted"></span></label>
-                <div class="form-control p-0 pt-1">
-                <div class="comment-toolbar border-0 border-bottom">
-                    <div class="d-flex justify-content-start">
-                    <span class="ql-formats me-0">
-                        <button class="ql-bold"></button>
-                        <button class="ql-italic"></button>
-                        <button class="ql-underline"></button>
-                        <button class="ql-list" value="ordered"></button>
-                        <button class="ql-list" value="bullet"></button>
-                        <button class="ql-link"></button>
-                        <button class="ql-image"></button>
-                    </span>
-                    </div>
-                </div>
-                <div class="comment-editor border-0 pb-0" id="ecommerce-category-description">
-                </div>
-
-                </div>
-            </div>
-            </div>
+<!-- Basic Bootstrap Table -->
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center">
+        <h5 class="card-title mb-0">Registro de Eventos</h5>
+      </div>
+      
+      <!-- Columna para el campo de búsqueda alineado a la derecha -->
+      <div class="col-md-6 d-flex justify-content-end align-items-center">
+        <div class="search-container">
+          <label for="search" class="me-2">Buscar:</label>
+          <input type="search" id="search" class="form-control" placeholder="Buscar...">
         </div>
-        <!-- /Second column -->
-    </div>
-    <div class="column">
-        <!-- Media -->
-        <div class="card mb-1">
-            <div class="card-header d-flex justify-content-between align-items-center">
-            <h5 class="mb-0 card-title">Imagen</h5>
-            <a href="javascript:void(0);" class="fw-medium">Añadir contenido desde un URL</a>
+      </div>
+
+  <div class="table-responsive text-nowrap">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Albergue</th>
+          <th>Usuario</th>
+          <th>Titulo</th>
+          <th>Fecha</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody class="table-border-bottom-0">
+        <tr>
+          <td><i class='bx bxs-donate-heart'></i> <span class="fw-medium">Vacunacion</span></td>
+          <td>Animalitos</td>
+          <td>
+            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+              
+              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Albergue">
+                <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
+              </li>
+              
+            </ul>
+          </td>
+          <td class="titulo-rosado"> Vancan: Campaña Antirrabica 2024</td>
+          <td> 10/09/2024 </td>
+          <td>
+            
+            <div class="card-body p-0">
+              <div class="d-inline-flex">
+                <button type="button" class="btn btn-sm btn-danger me-1">Eliminar</button>
+                <button type="button" class="btn btn-sm btn-warning">Editar</button>
+              </div>
             </div>
-            <div class="card-body">
-            <form action="https://demos.themeselection.com/upload" class="dropzone needsclick" id="dropzone-basic">
-                <div class="dz-message needsclick my-5">
-                <p class="fs-4 note needsclick my-2">Arrastra una imagen o Examinar en el dispositivo</p>
+            
+          
+          </td>
+        </tr>
+        <tr>
+          <td><i class="bx bxs-donate-heart"></i> <span class="fw-medium">Dinero</span></td>
+          <td>Perritos Unidos</td>
+          <td>
+            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+              
+              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Albergue">
+                <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
+              </li>
+              
+            </ul>
+          </td>
+          <td class="titulo-rosado"> Adopcion de mascotas II</td>
+          <td> 10/08/2024 </td>
+            <td>
+              <div class="card-body p-0">
+                <div class="d-inline-flex">
+                  <button type="button" class="btn btn-sm btn-danger me-1">Eliminar</button>
+                  <button type="button" class="btn btn-sm btn-warning">Editar</button>
                 </div>
-                <div class="fallback">
-                <input name="file" type="image" accept="image/*"/>
+              </div>
+              
+              </div>
+            </td>
+        </tr>
+
+        <tr>
+          
+        </tr>
+          <td><i class="bx bxs-donate-heart"></i> <span class="fw-medium">Comida</span></td>
+          <td>Gatitos Unidos</td>
+          <td>
+            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+              
+              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Albergue">
+                <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
+              </li>
+              
+            </ul>
+          </td>
+          <td class="titulo-rosado"> Campaña de Donaciones de Comida</td>
+          <td>
+            15/09/2024
+            <td>
+              <div class="card-body p-0">
+                <div class="d-inline-flex">
+                  <button type="button" class="btn btn-sm btn-danger me-1">Eliminar</button>
+                  <button type="button" class="btn btn-sm btn-warning">Editar</button>
                 </div>
-            </form>
-            </div>
-    </div>
-    </div>
-  </div>
+              </div>
+              
+            </td>
+          </td>
+        </tr>
+        <tr>
+          <td><i class="bx bxs-donate-heart"></i> <span class="fw-medium">Insumos</span></td>
+          <td>Conejitos Unidos</td>
+          <td>
+            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+             
+              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Albergue">
+                <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
+              </li>
+            
+            </ul>
+          </td>
+          <td class="titulo-rosado"> Gran concurso de mascotas</td>
+          <td>
+            15/09/2024
+            <td>
+              <div class="card-body p-0">
+                <div class="d-inline-flex">
+                  <button type="button" class="btn btn-sm btn-danger me-1">Eliminar</button>
+                  <button type="button" class="btn btn-sm btn-warning">Editar</button>
+                </div>
+              </div>
+              
+            </td>
+          </td>
+        </tr>
+        <tr>
+          <td><i class="bx bxs-donate-heart"></i> <span class="fw-medium">Campaña Esterilizacion</span></td>
+          <td>Godzila Nicola</td>
+          <td>
+            <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+              
+              <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Albergue">
+                <img src="../../assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
+              </li>
+             
+            </ul>
+          </td>
+          <td class="titulo-rosado">Tercera Campaña Nacional de Esterilizacion</td>
+
+          <td>
+            20/09/2024
+            <td>
+              <div class="card-body p-0">
+                <div class="d-inline-flex">
+                  <button type="button" class="btn btn-sm btn-danger me-1">Eliminar</button>
+                  <button type="button" class="btn btn-sm btn-warning">Editar</button>
+                </div>
+              </div>
+              
+            </td>
+          </td>
+      </tbody>
+    </table>
+
+    <ul class="pagination">
+      <li class="paginate_button page-item previous disabled">
+        <a href="#" class="page-link">&laquo;</a>
+      </li>
+      <li class="paginate_button page-item">
+        <a href="#" class="page-link">1</a>
+      </li>
+      <li class="paginate_button page-item">
+        <a href="#" class="page-link">2</a>
+      </li>
+      <li class="paginate_button page-item">
+        <a href="#" class="page-link">3</a>
+      </li>
+      <li class="paginate_button page-item">
+        <a href="#" class="page-link">4</a>
+      </li>
+      <li class="paginate_button page-item">
+        <a href="#" class="page-link">5</a>
+      </li>
+      <li class="paginate_button page-item disabled">
+        <a href="#" class="page-link">...</a>
+      </li>
+      <li class="paginate_button page-item">
+        <a href="#" class="page-link">15</a>
+      </li>
+      <li class="paginate_button page-item next">
+        <a href="#" class="page-link">&raquo;</a>
+      </li>
+    </ul>
+    
+
+    
   </div>
 </div>
-</div>
+
+<!--/ Basic Bootstrap Table -->
+
+          </div>
+          <!-- / Content -->
+
+          
+          
+
+<!-- Footer -->
+
+<!-- / Footer -->
+          
+          <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    
+    
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    
+    
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+  
+    
+  </div>
+  <!-- / Layout wrapper -->
+
+  
+
+  
 
   <!-- Core JS -->
   <!-- build:js assets/vendor/js/core.js -->
@@ -460,51 +650,34 @@
   <!-- endbuild -->
 
   <!-- Vendors JS -->
-  <script src="../../assets/vendor/libs/quill/katex.js"></script>
-<script src="../../assets/vendor/libs/quill/quill.js"></script>
-<script src="../../assets/vendor/libs/select2/select2.js"></script>
-<script src="../../assets/vendor/libs/dropzone/dropzone.js"></script>
-<script src="../../assets/vendor/libs/jquery-repeater/jquery-repeater.js"></script>
-<script src="../../assets/vendor/libs/flatpickr/flatpickr.js"></script>
-<script src="../../assets/vendor/libs/tagify/tagify.js"></script>
+  
+  
 
   <!-- Main JS -->
   <script src="../../assets/js/main.js"></script>
-  <script>
-    function cambiarPagina() {
-        var select = document.getElementById("opciones");
-        var opcionSeleccionada = select.value;
-
-        if (opcionSeleccionada) {
-            // Cambia la página según la opción seleccionada
-            window.location.href = opcionSeleccionada;
-        }
-    }
-  </script>
   
 
   <!-- Page JS -->
-  <script src="../../assets/js/app-ecommerce-product-add.js"></script>
-<!-- Footer -->
-<footer class="footer bg-footer-theme">
-  <div class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3">
-    <div>
-      <a href="javascript:void(0)" class="footer-link me-4">©2024 Alianza Animal S.A. Todos los derechos reservados.</a>
-
+  
+  <footer class="footer bg-footer-theme">
+    <div class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3">
+      <div>
+        <a href="javascript:void(0)" class="footer-link me-4">©2024 Alianza Animal S.A. Todos los derechos reservados.</a>
+  
+      </div>
+      <div>
+        <a href="javascript:void(0)" class="footer-link me-4">Ayuda</a>
+        <a href="javascript:void(0)" class="footer-link me-4">Contactos</a>
+        <a href="javascript:void(0)" class="footer-link">Terminos &amp; Condiciones</a>
+      </div>
     </div>
-    <div>
-      <a href="javascript:void(0)" class="footer-link me-4">Ayuda</a>
-      <a href="javascript:void(0)" class="footer-link me-4">Contactos</a>
-      <a href="javascript:void(0)" class="footer-link">Terminos &amp; Condiciones</a>
-    </div>
-  </div>
-</footer>
-<!-- / Footer -->
-
+  </footer>
+  
 </body>
 
 
-<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template-semi-dark/app-ecommerce-product-add.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Apr 2024 23:14:10 GMT -->
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template-semi-dark/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Apr 2024 23:16:07 GMT -->
 </html>
 
 <!-- beautify ignore:end -->
+
