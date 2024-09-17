@@ -92,27 +92,210 @@
 
 <nav class="navbar navbar-expand-lg bg-navbar-theme">
   <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-5">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbar-ex-5">
       <div class="navbar-nav me-auto">
-        <a class="nav-item nav-link active" href="javascript:void(0)">Hogar</a>
-        <a class="nav-item nav-link" href="javascript:void(0)">Servicios</a>
         <a class="nav-item nav-link" href="javascript:void(0)">Publicaciones</a>
         <a class="nav-item nav-link" href="javascript:void(0)">Eventos</a>
+        <a class="nav-item nav-link" href="javascript:void(0)">Servicios</a>
       </div>
-      <ul class="navbar-nav ms-lg-auto">
-        <li class="nav-item">
-          <!-- User -->
 
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0);"><i class="bx bx-bell bx-sm"></i> Notificaciones  </a>
+      <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+
+
+
+
+
+        <!-- Notification -->
+        <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+          <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            <i class="bx bx-bell bx-sm"></i>
+            <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end py-0">
+            <li class="dropdown-menu-header border-bottom">
+              <div class="dropdown-header d-flex align-items-center py-3">
+                <h5 class="text-body mb-0 me-auto">Notificaciones</h5>
+                <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
+              </div>
+            </li>
+            <li class="dropdown-notifications-list scrollable-container">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                      <div class="avatar">
+                        <img src="../../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle">
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                      <p class="mb-0">Won the monthly best seller gold badge</p>
+                      <small class="text-muted">1h ago</small>
+                    </div>
+                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                      <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
+                      <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="bx bx-x"></span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                      <div class="avatar">
+                        <span class="avatar-initial rounded-circle bg-label-danger">CF</span>
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1">Charles Franklin</h6>
+                      <p class="mb-0">Accepted your connection</p>
+                      <small class="text-muted">12hr ago</small>
+                    </div>
+                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                      <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
+                      <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="bx bx-x"></span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                      <div class="avatar">
+                        <img src="../../assets/img/avatars/2.png" alt class="w-px-40 h-auto rounded-circle">
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1">New Message ✉️</h6>
+                      <p class="mb-0">You have new message from Natalie</p>
+                      <small class="text-muted">1h ago</small>
+                    </div>
+                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                      <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
+                      <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="bx bx-x"></span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                      <div class="avatar">
+                        <span class="avatar-initial rounded-circle bg-label-success"><i class="bx bx-cart"></i></span>
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1">Whoo! You have new order 🛒 </h6>
+                      <p class="mb-0">ACME Inc. made new order $1,154</p>
+                      <small class="text-muted">1 day ago</small>
+                    </div>
+                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                      <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
+                      <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="bx bx-x"></span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                      <div class="avatar">
+                        <img src="../../assets/img/avatars/9.png" alt class="w-px-40 h-auto rounded-circle">
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1">Application has been approved 🚀 </h6>
+                      <p class="mb-0">Your ABC project application has been approved.</p>
+                      <small class="text-muted">2 days ago</small>
+                    </div>
+                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                      <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
+                      <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="bx bx-x"></span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                      <div class="avatar">
+                        <span class="avatar-initial rounded-circle bg-label-success"><i class="bx bx-pie-chart-alt"></i></span>
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1">Monthly report is generated</h6>
+                      <p class="mb-0">July monthly financial report is generated </p>
+                      <small class="text-muted">3 days ago</small>
+                    </div>
+                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                      <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
+                      <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="bx bx-x"></span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                      <div class="avatar">
+                        <img src="../../assets/img/avatars/5.png" alt class="w-px-40 h-auto rounded-circle">
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1">Send connection request</h6>
+                      <p class="mb-0">Peter sent you connection request</p>
+                      <small class="text-muted">4 days ago</small>
+                    </div>
+                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                      <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
+                      <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="bx bx-x"></span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                      <div class="avatar">
+                        <img src="../../assets/img/avatars/6.png" alt class="w-px-40 h-auto rounded-circle">
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1">New message from Jane</h6>
+                      <p class="mb-0">Your have new message from Jane</p>
+                      <small class="text-muted">5 days ago</small>
+                    </div>
+                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                      <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
+                      <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="bx bx-x"></span></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                      <div class="avatar">
+                        <span class="avatar-initial rounded-circle bg-label-warning"><i class="bx bx-error"></i></span>
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1">CPU is running high</h6>
+                      <p class="mb-0">CPU Utilization Percent is currently at 88.63%,</p>
+                      <small class="text-muted">5 days ago</small>
+                    </div>
+                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                      <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
+                      <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="bx bx-x"></span></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-menu-footer border-top p-3">
+              <button class="btn btn-primary text-uppercase w-100">Ver todas las notificaciones</button>
+            </li>
+          </ul>
         </li>
-
-
+        <!--/ Notification -->
+        <!-- User -->
         <li class="nav-item navbar-dropdown dropdown-user dropdown">
           <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
             <div class="avatar avatar-online">
@@ -129,8 +312,8 @@
                     </div>
                   </div>
                   <div class="flex-grow-1">
-                    <span class="fw-medium d-block">Noelia</span>
-                    <small class="text-muted">Usuario</small>
+                    <span class="fw-medium d-block"> Usuario </span>
+                    <small class="text-muted">Admin</small>
                   </div>
                 </div>
               </a>
@@ -144,16 +327,22 @@
                 <span class="align-middle">Mi perfil</span>
               </a>
             </li>
+
+
             <li>
               <div class="dropdown-divider"></div>
             </li>
             <li>
               <a class="dropdown-item" href="pages-faq.html">
                 <i class="bx bx-help-circle me-2"></i>
-                <span class="align-middle">Preguntas Frecuentes</span>
+                <span class="align-middle">Preguntas frecuentes</span>
               </a>
             </li>
             <li>
+              <a class="dropdown-item" href="pages-pricing.html">
+                <i class="bx bx-dollar me-2"></i>
+                <span class="align-middle">Donaciones</span>
+              </a>
             </li>
             <li>
               <div class="dropdown-divider"></div>
@@ -167,11 +356,13 @@
           </ul>
         </li>
         <!--/ User -->
-        </li>
+
+
       </ul>
     </div>
   </div>
 </nav>
+
 
 <!-- Content wrapper -->
 <div class="content-wrapper">
@@ -225,35 +416,36 @@
       <!-- Card Container -->
       <div class="card mb-2" style="padding: 0; margin: 0;">
         <div class="card-header d-flex flex-wrap justify-content-between gap-2">
-          <div class="card-title mb-0">
-            <h5 class="mb-0">Mis Publicaciones</h5>
-            <p class="text-muted mb-0">Últimas Publicaciones</p>
+          <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Nueva publicacion
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="javascript:void(0);">Donaciones activos</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">Donaciones de dinero</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">Actualizaciones</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);">Adopción</a></li>
+            </ul>
           </div>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="javascript:void(0);">Donaciones activos</a></li>
-            <li><a class="dropdown-item" href="javascript:void(0);">Donaciones de dinero</a></li>
-            <li><a class="dropdown-item" href="javascript:void(0);">Actualizaciones</a></li>
-            <li><a class="dropdown-item" href="javascript:void(0);">Adopción</a></li>
-          </ul>
         </div>
         <div class="card-body p-0">
           <div class="container-fluid">
             <div class="row gx-1 gy-2 justify-content-center m-0">
               <!-- Card 1 -->
-              <div class="col-sm-12 col-md-2 px-1 mb-2 d-flex">
-                <div class="card" style="height: 100%; border: 1px solid #ddd; box-shadow: none;">
-                  <div class="rounded-2 text-center">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2 px-1 mb-2 d-flex justify-content-center">
+                <div class="card d-flex flex-column" style="border: 1px solid #ddd; box-shadow: none; width: 100%; max-width: 250px;">
+                  <div class="rounded-2 text-center flex-grow-1">
                     <a href="modificar-publicacion-usuario.html">
-                      <img class="img-fluid" src="../../assets/img/img17.jpg" alt="Imagen de publicación 1" style="height: 200px; object-fit: cover;"/>
+                      <img class="img-fluid" src="../../assets/img/img7.jpg" alt="Imagen de publicación 1" style="height: 200px; object-fit: cover;"/>
                     </a>
                   </div>
-                  <div class="card-body p-2">
+                  <div class="card-body p-2 d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                       <span class="badge bg-label-info" style="font-size: 0.75rem;">Donaciones de dinero</span>
                     </div>
-                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">Cada oportunidad cuenta!!!!!</a>
-                    <p class="mt-1" style="font-size: 0.75rem;">Luego de un harto trabajo de recolección, estamos a 100 soles de cumplir el objetivo</p>
-                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap">
+                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">Claudio te está esperando!!</a>
+                    <p class="mt-1 mb-0" style="font-size: 0.75rem;">Luego de un harto trabajo de recolección, estamos a 100 soles de cumplir el objetivo</p>
+                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap mt-auto">
                       <a class="btn btn-label-secondary me-md-1 d-flex align-items-center" href="modificar-publicacion-usuario.html" style="font-size: 0.75rem;">
                         <i class="bx bx-sync align-middle me-1"></i><span>Borrar</span>
                       </a>
@@ -265,20 +457,20 @@
                 </div>
               </div>
               <!-- Card 2 -->
-              <div class="col-sm-12 col-md-2 px-1 mb-2 d-flex">
-                <div class="card" style="height: 100%; border: 1px solid #ddd; box-shadow: none;">
-                  <div class="rounded-2 text-center">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2 px-1 mb-2 d-flex justify-content-center">
+                <div class="card d-flex flex-column" style="border: 1px solid #ddd; box-shadow: none; width: 100%; max-width: 250px;">
+                  <div class="rounded-2 text-center flex-grow-1">
                     <a href="modificar-publicacion-usuario.html">
-                      <img class="img-fluid" src="../../assets/img/img15.jpg" alt="Imagen de publicación 2" style="height: 200px; object-fit: cover;"/>
+                      <img class="img-fluid" src="../../assets/img/img16.jpg" alt="Imagen de publicación 2" style="height: 200px; object-fit: cover;"/>
                     </a>
                   </div>
-                  <div class="card-body p-2">
+                  <div class="card-body p-2 d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                       <span class="badge bg-label-info" style="font-size: 0.75rem;">Donaciones de dinero</span>
                     </div>
-                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">Bobby te necesita urgente</a>
-                    <p class="mt-1" style="font-size: 0.75rem;">Bobby fue operado la semana pasada y necesita otra operación de apéndice</p>
-                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap">
+                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">¿Buscas un compañero fiel?</a>
+                    <p class="mt-1 mb-0" style="font-size: 0.75rem;">Bobby fue operado la semana pasada y necesita otra operación de apéndice</p>
+                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap mt-auto">
                       <a class="btn btn-label-secondary me-md-1 d-flex align-items-center" href="modificar-publicacion-usuario.html" style="font-size: 0.75rem;">
                         <i class="bx bx-sync align-middle me-1"></i><span>Borrar</span>
                       </a>
@@ -290,20 +482,20 @@
                 </div>
               </div>
               <!-- Card 3 -->
-              <div class="col-sm-12 col-md-2 px-1 mb-2 d-flex">
-                <div class="card" style="height: 100%; border: 1px solid #ddd; box-shadow: none;">
-                  <div class="rounded-2 text-center">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2 px-1 mb-2 d-flex justify-content-center">
+                <div class="card d-flex flex-column" style="border: 1px solid #ddd; box-shadow: none; width: 100%; max-width: 250px;">
+                  <div class="rounded-2 text-center flex-grow-1">
                     <a href="modificar-publicacion-usuario.html">
-                      <img class="img-fluid" src="../../assets/img/img14.jpg" alt="Imagen de publicación 3" style="height: 200px; object-fit: cover;"/>
+                      <img class="img-fluid" src="../../assets/img/img11.jpg" alt="Imagen de publicación 3" style="height: 200px; object-fit: cover;"/>
                     </a>
                   </div>
-                  <div class="card-body p-2">
+                  <div class="card-body p-2 d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center mb-2">
-                      <span class="badge bg-label-info" style="font-size: 0.75rem;">Adopción</span>
+                      <span class="badge bg-label-info" style="font-size: 0.75rem;">Donaciones de dinero</span>
                     </div>
-                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">Navidad para ellos</a>
-                    <p class="mt-1" style="font-size: 0.75rem;">Dales una alegría a nuestros animalitos</p>
-                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap">
+                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">¡Cada dólar cuenta!</a>
+                    <p class="mt-1 mb-0" style="font-size: 0.75rem;">Bobby fue operado la semana pasada y necesita otra operación de apéndice</p>
+                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap mt-auto">
                       <a class="btn btn-label-secondary me-md-1 d-flex align-items-center" href="modificar-publicacion-usuario.html" style="font-size: 0.75rem;">
                         <i class="bx bx-sync align-middle me-1"></i><span>Borrar</span>
                       </a>
@@ -315,20 +507,20 @@
                 </div>
               </div>
               <!-- Card 4 -->
-              <div class="col-sm-12 col-md-2 px-1 mb-2 d-flex">
-                <div class="card" style="height: 100%; border: 1px solid #ddd; box-shadow: none;">
-                  <div class="rounded-2 text-center">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2 px-1 mb-2 d-flex justify-content-center">
+                <div class="card d-flex flex-column" style="border: 1px solid #ddd; box-shadow: none; width: 100%; max-width: 250px;">
+                  <div class="rounded-2 text-center flex-grow-1">
                     <a href="modificar-publicacion-usuario.html">
-                      <img class="img-fluid" src="../../assets/img/img3.jpg" alt="Imagen de publicación 4" style="height: 200px; object-fit: cover;"/>
+                      <img class="img-fluid" src="../../assets/img/img12.jpg" alt="Imagen de publicación 4" style="height: 200px; object-fit: cover;"/>
                     </a>
                   </div>
-                  <div class="card-body p-2">
+                  <div class="card-body p-2 d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center mb-2">
-                      <span class="badge bg-label-info" style="font-size: 0.75rem;">Donación</span>
+                      <span class="badge bg-label-info" style="font-size: 0.75rem;">Donaciones de dinero</span>
                     </div>
-                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">Ronco, sueña contigo</a>
-                    <p class="mt-1" style="font-size: 0.75rem;">Ronco todos los días sueña en sentir el calor de un hogar</p>
-                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap">
+                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">Ayúdanos a llegar al objetivo</a>
+                    <p class="mt-1 mb-0" style="font-size: 0.75rem;">Bobby fue operado la semana pasada y necesita otra operación de apéndice</p>
+                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap mt-auto">
                       <a class="btn btn-label-secondary me-md-1 d-flex align-items-center" href="modificar-publicacion-usuario.html" style="font-size: 0.75rem;">
                         <i class="bx bx-sync align-middle me-1"></i><span>Borrar</span>
                       </a>
@@ -340,20 +532,20 @@
                 </div>
               </div>
               <!-- Card 5 -->
-              <div class="col-sm-12 col-md-2 px-1 mb-2 d-flex">
-                <div class="card" style="height: 100%; border: 1px solid #ddd; box-shadow: none;">
-                  <div class="rounded-2 text-center">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2 px-1 mb-2 d-flex justify-content-center">
+                <div class="card d-flex flex-column" style="border: 1px solid #ddd; box-shadow: none; width: 100%; max-width: 250px;">
+                  <div class="rounded-2 text-center flex-grow-1">
                     <a href="modificar-publicacion-usuario.html">
-                      <img class="img-fluid" src="../../assets/img/img7.jpg" alt="Imagen de publicación 5" style="height: 200px; object-fit: cover;"/>
+                      <img class="img-fluid" src="../../assets/img/img15.jpg" alt="Imagen de publicación 5" style="height: 200px; object-fit: cover;"/>
                     </a>
                   </div>
-                  <div class="card-body p-2">
+                  <div class="card-body p-2 d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center mb-2">
-                      <span class="badge bg-label-info" style="font-size: 0.75rem;">Adopción</span>
+                      <span class="badge bg-label-info" style="font-size: 0.75rem;">Donaciones de dinero</span>
                     </div>
-                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">Retiros de febrero</a>
-                    <p class="mt-1" style="font-size: 0.75rem;">¡Muchos animales esperan por un hogar!</p>
-                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap">
+                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">¡Vamos por la meta!</a>
+                    <p class="mt-1 mb-0" style="font-size: 0.75rem;">Bobby fue operado la semana pasada y necesita otra operación de apéndice</p>
+                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap mt-auto">
                       <a class="btn btn-label-secondary me-md-1 d-flex align-items-center" href="modificar-publicacion-usuario.html" style="font-size: 0.75rem;">
                         <i class="bx bx-sync align-middle me-1"></i><span>Borrar</span>
                       </a>
@@ -365,20 +557,20 @@
                 </div>
               </div>
               <!-- Card 6 -->
-              <div class="col-sm-12 col-md-2 px-1 mb-2 d-flex">
-                <div class="card" style="height: 100%; border: 1px solid #ddd; box-shadow: none;">
-                  <div class="rounded-2 text-center">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-2 px-1 mb-2 d-flex justify-content-center">
+                <div class="card d-flex flex-column" style="border: 1px solid #ddd; box-shadow: none; width: 100%; max-width: 250px;">
+                  <div class="rounded-2 text-center flex-grow-1">
                     <a href="modificar-publicacion-usuario.html">
-                      <img class="img-fluid" src="../../assets/img/img7.jpg" alt="Imagen de publicación 6" style="height: 200px; object-fit: cover;"/>
+                      <img class="img-fluid" src="../../assets/img/img14.jpg" alt="Imagen de publicación 6" style="height: 200px; object-fit: cover;"/>
                     </a>
                   </div>
-                  <div class="card-body p-2">
+                  <div class="card-body p-2 d-flex flex-column">
                     <div class="d-flex justify-content-between align-items-center mb-2">
-                      <span class="badge bg-label-info" style="font-size: 0.75rem;">Actualización</span>
+                      <span class="badge bg-label-info" style="font-size: 0.75rem;">Donaciones de dinero</span>
                     </div>
-                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">Regalos para mascotas</a>
-                    <p class="mt-1" style="font-size: 0.75rem;">Para que se sientan queridos en estas fiestas</p>
-                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap">
+                    <a class="h6" href="modificar-publicacion-usuario.html" style="font-size: 0.875rem;">¡Únete a la causa!</a>
+                    <p class="mt-1 mb-0" style="font-size: 0.75rem;">Bobby fue operado la semana pasada y necesita otra operación de apéndice</p>
+                    <div class="d-flex flex-column flex-md-row gap-1 text-nowrap mt-auto">
                       <a class="btn btn-label-secondary me-md-1 d-flex align-items-center" href="modificar-publicacion-usuario.html" style="font-size: 0.75rem;">
                         <i class="bx bx-sync align-middle me-1"></i><span>Borrar</span>
                       </a>
@@ -390,66 +582,52 @@
                 </div>
               </div>
             </div>
-            <!-- Pagination -->
-            <nav aria-label="Page navigation">
-              <ul class="pagination justify-content-center mt-4">
-                <li class="page-item disabled">
-                  <span class="page-link">Anterior</span>
-                </li>
-                <li class="page-item active" aria-current="page">
-                  <span class="page-link">1</span>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">3</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Siguiente</a>
-                </li>
-              </ul>
-            </nav>
           </div>
         </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- Pagination -->
+        <div class="card-footer d-flex justify-content-center">
+          <ul class="pagination m-0">
+            <li class="page-item disabled">
+              <span class="page-link">Anterior</span>
+            </li>
+            <li class="page-item active">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">Siguiente</a>
+            </li>
+          </ul>
+        </div>
 
 
 
       <!-- Footer -->
-      <footer class="footer bg-footer-theme">
-        <div class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3">
-          <div>
-            <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/" target="_blank" class="footer-text fw-bold">©2024 Alianza Animal S.A. Todos los derechos reservados.</a>
-          </div>
-          <div>
-            <a href="javascript:void(0)" class="footer-link me-4">Ayuda</a>
-            <a href="javascript:void(0)" class="footer-link me-4">Contactos</a>
-            <a href="javascript:void(0)" class="footer-link">Terminos &amp; Condiciones</a>
-          </div>
-        </div>
-      </footer>
-      <!-- / Footer -->
+<footer class="footer bg-footer-theme">
+  <div class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-3">
+    <div>
+      <a href="javascript:void(0)" class="footer-link me-4">©2024 Alianza Animal S.A. Todos los derechos reservados.</a>
 
-      <div class="content-backdrop fade"></div>
     </div>
-    <!-- Content wrapper -->
+    <div>
+      <a href="javascript:void(0)" class="footer-link me-4">Ayuda</a>
+      <a href="javascript:void(0)" class="footer-link me-4">Contactos</a>
+      <a href="javascript:void(0)" class="footer-link">Terminos &amp; Condiciones</a>
+    </div>
   </div>
-  <!-- / Layout page -->
+</footer>
+<!-- / Footer -->
+
+<div class="content-backdrop fade"></div>
+</div>
+<!-- Content wrapper -->
+</div>
+<!-- / Layout page -->
 </div>
 
 

@@ -3,37 +3,7 @@
 * File include item demo only specific css only
 ******************************************************************************/
 
-/*new
-*/
-/* Reduce el margen en los filtros */
-.col-md-4 {
-  margin-bottom: 1000.5rem; /* Reduce el margen inferior */
-}
 
-/* Ajusta los tamaños de los inputs y selects para que ocupen menos espacio */
-.form-control-lg, .form-select-lg {
-  padding: 0.5rem 1rem; /* Ajusta el padding interno */
-  font-size: 0.875rem; /* Reduce el tamaño de fuente */
-}
-
-/* Si quieres reducir también el margen entre las tarjetas (card) */
-.card.mb-4 {
-  margin-bottom: 1rem; /* Reduce el margen inferior entre tarjetas */
-}
-
-/* Si las publicaciones tienen mucho margen, reduce los valores aquí */
-.card-body {
-  padding: 1rem; /* Ajusta el padding interno de las tarjetas */
-}
-
-/* Si hay una clase específica para las publicaciones, podrías agregar algo como */
-.publicacion {
-  margin: 0.5rem 0; /* Reduce el margen superior e inferior */
-  font-size: 0.9rem; /* Ajusta el tamaño de las publicaciones si es necesario */
-}
-
-/*new
-*/
 .menu .app-brand.demo {
   height: 64px;
   margin-top: 12px;
